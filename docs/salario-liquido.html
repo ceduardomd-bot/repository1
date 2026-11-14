@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculadora de Salário Líquido 2026 (com INSS e IR atualizados)</title>
+<meta name="description" content="Descubra quanto você recebe de verdade. Calcule o salário líquido 2026 com descontos de INSS, Imposto de Renda e a nova isenção até R$ 5 mil.">
+<link rel="canonical" href="https://SEU-USUARIO.github.io/repository1/salario-liquido.html">
+<meta property="og:title" content="Calculadora de Salário Líquido 2026 (com INSS e IR atualizados)"><meta property="og:description" content="Descubra quanto você recebe de verdade. Calcule o salário líquido 2026 com descontos de INSS, Imposto de Renda e a nova isenção até R$ 5 mil.">
+<link rel="stylesheet" href="css/style.css">
+
+</head><body>
+<header class="topo"><div class="wrap"><a class="logo" href="index.html">Calcula<span>Fácil</span></a><nav><a href="salario-liquido.html">Salário Líquido</a><a href="decimo-terceiro.html">13º Salário</a><a href="ferias.html">Férias</a></nav></div></header>
+<main class="wrap">
+<h1>Calculadora de Salário Líquido 2026 (com INSS e IR atualizados)</h1>
+<p class="sub">Descubra quanto você recebe de verdade. Calcule o salário líquido 2026 com descontos de INSS, Imposto de Renda e a nova isenção até R$ 5 mil.</p>
+<div class="card"><form id="f"><label>Salário bruto (R$)<input id="bruto" inputmode="decimal" value="3000"></label>
+<label>Nº de dependentes<input id="dep" inputmode="decimal" value="0"></label>
+<label>Outros descontos (R$)<input id="outros" inputmode="decimal" value="0"></label><button>Calcular</button></form></div>
+<div id="caixa-resultado" class="card oculto"><table id="resultado"></table></div>
+<div class="anuncio">Espaço para anúncio</div>
+<article class="card"><h2>Como o salário líquido é calculado</h2>
+<p>O salário líquido é o valor que cai na sua conta. Ele é o salário bruto menos os descontos obrigatórios: <strong>INSS</strong> e <strong>Imposto de Renda Retido na Fonte (IRRF)</strong>, além de outros descontos como vale-transporte, plano de saúde ou pensão.</p>
+<h2>Isenção do Imposto de Renda até R$ 5.000 em 2026</h2>
+<p>Desde janeiro de 2026 (Lei 15.270/2025), quem recebe até R$ 5.000 por mês não tem imposto retido na fonte. Entre R$ 5.000,01 e R$ 7.350 o desconto é reduzido gradualmente. Acima disso, vale a tabela normal.</p>
+<h2>Perguntas frequentes</h2>
+<p><strong>O INSS é calculado sobre o salário todo?</strong> Não. As alíquotas de 7,5% a 14% são progressivas e há um teto: o desconto máximo em 2026 é de R$ 988,08.</p>
+<p><strong>Dependentes reduzem o imposto?</strong> Sim. Cada dependente abate R$ 189,59 da base de cálculo do IR.</p></article>
+<h2>Outras calculadoras</h2><div class="grade"><a href="decimo-terceiro.html"><strong>13º Salário</strong>Calcule o valor do seu 13º salário 2026, integral ou proporcional, com o valor e…</a><a href="ferias.html"><strong>Férias</strong>Calcule o valor das suas férias com o terço constitucional, a opção de vender 10…</a><a href="horas-extras.html"><strong>Horas Extras</strong>Saiba quanto vale sua hora extra. Calcule horas extras de 50% e 100% (domingos e…</a><a href="juros-compostos.html"><strong>Juros Compostos</strong>Simule quanto seu dinheiro rende com juros compostos e aportes mensais. Veja o t…</a></div>
+</main>
+<footer><div class="wrap">© 2026 Calcula Fácil. Valores com base nas tabelas oficiais de 2026. Resultados são estimativas e não substituem a orientação de um contador. · <a href="privacidade.html">Privacidade</a></div></footer>
+<script src="js/calculos.js"></script><script src="js/ui.js"></script>
+<script>document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var r=Calc.salarioLiquido(num('bruto'),num('dep'),num('outros'));
+mostrar([['Salário bruto',r.bruto],['(−) INSS',r.inss],['(−) Imposto de Renda',r.irrf],['(−) Outros descontos',r.outros],['Salário líquido',r.liquido,1]]);});</script>
+</body></html>

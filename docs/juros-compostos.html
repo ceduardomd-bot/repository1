@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculadora de Juros Compostos com aportes mensais</title>
+<meta name="description" content="Simule quanto seu dinheiro rende com juros compostos e aportes mensais. Veja o total investido, os juros ganhos e o valor final.">
+<link rel="canonical" href="https://SEU-USUARIO.github.io/repository1/juros-compostos.html">
+<meta property="og:title" content="Calculadora de Juros Compostos com aportes mensais"><meta property="og:description" content="Simule quanto seu dinheiro rende com juros compostos e aportes mensais. Veja o total investido, os juros ganhos e o valor final.">
+<link rel="stylesheet" href="css/style.css">
+
+</head><body>
+<header class="topo"><div class="wrap"><a class="logo" href="index.html">Calcula<span>Fácil</span></a><nav><a href="salario-liquido.html">Salário Líquido</a><a href="decimo-terceiro.html">13º Salário</a><a href="ferias.html">Férias</a></nav></div></header>
+<main class="wrap">
+<h1>Calculadora de Juros Compostos com aportes mensais</h1>
+<p class="sub">Simule quanto seu dinheiro rende com juros compostos e aportes mensais. Veja o total investido, os juros ganhos e o valor final.</p>
+<div class="card"><form id="f"><label>Valor inicial (R$)<input id="ini" inputmode="decimal" value="1000"></label>
+<label>Aporte mensal (R$)<input id="ap" inputmode="decimal" value="200"></label>
+<label>Taxa de juros ao ano (%)<input id="taxa" inputmode="decimal" value="10"></label>
+<label>Período (anos)<input id="anos" inputmode="decimal" value="10"></label><button>Calcular</button></form></div>
+<div id="caixa-resultado" class="card oculto"><table id="resultado"></table></div>
+<div class="anuncio">Espaço para anúncio</div>
+<article class="card"><h2>O que são juros compostos</h2>
+<p>São "juros sobre juros": o rendimento de cada mês passa a render também nos meses seguintes. Por isso, quanto mais tempo o dinheiro fica aplicado, mais rápido ele cresce.</p>
+<h2>Que taxa usar?</h2>
+<p>Use a taxa anual do investimento que você está avaliando (por exemplo, um percentual do CDI ou da Selic). A calculadora converte para taxa mensal equivalente. O resultado não desconta Imposto de Renda nem inflação.</p></article>
+<h2>Outras calculadoras</h2><div class="grade"><a href="salario-liquido.html"><strong>Salário Líquido</strong>Descubra quanto você recebe de verdade. Calcule o salário líquido 2026 com desco…</a><a href="decimo-terceiro.html"><strong>13º Salário</strong>Calcule o valor do seu 13º salário 2026, integral ou proporcional, com o valor e…</a><a href="ferias.html"><strong>Férias</strong>Calcule o valor das suas férias com o terço constitucional, a opção de vender 10…</a><a href="horas-extras.html"><strong>Horas Extras</strong>Saiba quanto vale sua hora extra. Calcule horas extras de 50% e 100% (domingos e…</a></div>
+</main>
+<footer><div class="wrap">© 2026 Calcula Fácil. Valores com base nas tabelas oficiais de 2026. Resultados são estimativas e não substituem a orientação de um contador. · <a href="privacidade.html">Privacidade</a></div></footer>
+<script src="js/calculos.js"></script><script src="js/ui.js"></script>
+<script>document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var r=Calc.jurosCompostos(num('ini'),num('ap'),Calc.taxaAnualParaMensal(num('taxa')/100),Math.round(num('anos')*12));
+mostrar([['Total investido',r.investido],['Juros ganhos',r.juros],['Valor final',r.montante,1]]);});</script>
+</body></html>

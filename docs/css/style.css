@@ -1,0 +1,31 @@
+:root{--bg:#f6f7f9;--card:#fff;--txt:#1d2433;--muted:#5b6475;--pri:#0b7a53;--pri-2:#0a6646;--borda:#e1e5ec;--destaque:#e8f5ef}
+@media (prefers-color-scheme:dark){:root{--bg:#11151c;--card:#1a2029;--txt:#e7eaf0;--muted:#9aa3b2;--pri:#3ccf93;--pri-2:#2fb37e;--borda:#2a3240;--destaque:#173127}}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+a{color:var(--pri)}
+.topo{background:var(--card);border-bottom:1px solid var(--borda)}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.15rem;text-decoration:none;color:var(--txt)}
+.logo span{color:var(--pri)}
+nav a{margin-right:14px;text-decoration:none;font-size:.95rem}
+.wrap{max-width:860px;margin:0 auto;padding:16px}
+h1{font-size:1.7rem;line-height:1.25;margin:.6em 0 .2em}
+.sub{color:var(--muted);margin-top:0}
+.card{background:var(--card);border:1px solid var(--borda);border-radius:12px;padding:20px;margin:18px 0}
+form{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+label{display:flex;flex-direction:column;font-size:.9rem;font-weight:600;gap:4px}
+input,select{font:inherit;padding:10px 12px;border:1px solid var(--borda);border-radius:8px;background:var(--bg);color:var(--txt)}
+button{grid-column:1/-1;font:inherit;font-weight:700;padding:12px;border:0;border-radius:8px;background:var(--pri);color:#fff;cursor:pointer}
+button:hover{background:var(--pri-2)}
+table{width:100%;border-collapse:collapse}
+td{padding:8px 4px;border-bottom:1px solid var(--borda)}
+td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+tr.total td{font-weight:800;font-size:1.1rem;background:var(--destaque);border-bottom:0}
+.oculto{display:none}
+.anuncio{min-height:90px;border:1px dashed var(--borda);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.8rem;margin:18px 0}
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.grade a{display:block;background:var(--card);border:1px solid var(--borda);border-radius:12px;padding:18px;text-decoration:none;color:var(--txt)}
+.grade a strong{color:var(--pri);display:block;font-size:1.05rem}
+.grade a:hover{border-color:var(--pri)}
+.aviso{font-size:.85rem;color:var(--muted)}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--borda);margin-top:30px}

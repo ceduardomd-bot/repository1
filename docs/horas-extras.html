@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculadora de Horas Extras 50% e 100%</title>
+<meta name="description" content="Saiba quanto vale sua hora extra. Calcule horas extras de 50% e 100% (domingos e feriados) a partir do seu salário e da sua jornada.">
+<link rel="canonical" href="https://SEU-USUARIO.github.io/repository1/horas-extras.html">
+<meta property="og:title" content="Calculadora de Horas Extras 50% e 100%"><meta property="og:description" content="Saiba quanto vale sua hora extra. Calcule horas extras de 50% e 100% (domingos e feriados) a partir do seu salário e da sua jornada.">
+<link rel="stylesheet" href="css/style.css">
+
+</head><body>
+<header class="topo"><div class="wrap"><a class="logo" href="index.html">Calcula<span>Fácil</span></a><nav><a href="salario-liquido.html">Salário Líquido</a><a href="decimo-terceiro.html">13º Salário</a><a href="ferias.html">Férias</a></nav></div></header>
+<main class="wrap">
+<h1>Calculadora de Horas Extras 50% e 100%</h1>
+<p class="sub">Saiba quanto vale sua hora extra. Calcule horas extras de 50% e 100% (domingos e feriados) a partir do seu salário e da sua jornada.</p>
+<div class="card"><form id="f"><label>Salário bruto (R$)<input id="sal" inputmode="decimal" value="3000"></label>
+<label>Jornada mensal (horas)<input id="jor" inputmode="decimal" value="220"></label>
+<label>Horas extras 50%<input id="h50" inputmode="decimal" value="10"></label>
+<label>Horas extras 100%<input id="h100" inputmode="decimal" value="0"></label><button>Calcular</button></form></div>
+<div id="caixa-resultado" class="card oculto"><table id="resultado"></table></div>
+<div class="anuncio">Espaço para anúncio</div>
+<article class="card"><h2>Como calcular a hora extra</h2>
+<p>Divida o salário pela jornada mensal (220 horas para quem trabalha 44h por semana, 200 para 40h, 180 para 36h). A hora extra em dia útil vale no mínimo <strong>50% a mais</strong>. Em domingos e feriados geralmente vale <strong>100% a mais</strong>.</p>
+<p class="aviso">Quem faz horas extras com frequência também tem direito ao reflexo no DSR (descanso semanal remunerado), que não está incluído aqui. Confira também a convenção coletiva da sua categoria, que pode prever percentuais maiores.</p></article>
+<h2>Outras calculadoras</h2><div class="grade"><a href="salario-liquido.html"><strong>Salário Líquido</strong>Descubra quanto você recebe de verdade. Calcule o salário líquido 2026 com desco…</a><a href="decimo-terceiro.html"><strong>13º Salário</strong>Calcule o valor do seu 13º salário 2026, integral ou proporcional, com o valor e…</a><a href="ferias.html"><strong>Férias</strong>Calcule o valor das suas férias com o terço constitucional, a opção de vender 10…</a><a href="juros-compostos.html"><strong>Juros Compostos</strong>Simule quanto seu dinheiro rende com juros compostos e aportes mensais. Veja o t…</a></div>
+</main>
+<footer><div class="wrap">© 2026 Calcula Fácil. Valores com base nas tabelas oficiais de 2026. Resultados são estimativas e não substituem a orientação de um contador. · <a href="privacidade.html">Privacidade</a></div></footer>
+<script src="js/calculos.js"></script><script src="js/ui.js"></script>
+<script>document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var r=Calc.horasExtras(num('sal'),num('jor')||220,num('h50'),num('h100'));
+mostrar([['Valor da sua hora normal',r.valorHora],['Horas extras 50%',r.valor50],['Horas extras 100%',r.valor100],['Total de horas extras',r.total,1]]);});</script>
+</body></html>

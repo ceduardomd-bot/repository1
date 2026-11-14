@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculadora de Férias 2026 com 1/3 e abono pecuniário</title>
+<meta name="description" content="Calcule o valor das suas férias com o terço constitucional, a opção de vender 10 dias (abono) e os descontos de INSS e IR de 2026.">
+<link rel="canonical" href="https://SEU-USUARIO.github.io/repository1/ferias.html">
+<meta property="og:title" content="Calculadora de Férias 2026 com 1/3 e abono pecuniário"><meta property="og:description" content="Calcule o valor das suas férias com o terço constitucional, a opção de vender 10 dias (abono) e os descontos de INSS e IR de 2026.">
+<link rel="stylesheet" href="css/style.css">
+
+</head><body>
+<header class="topo"><div class="wrap"><a class="logo" href="index.html">Calcula<span>Fácil</span></a><nav><a href="salario-liquido.html">Salário Líquido</a><a href="decimo-terceiro.html">13º Salário</a><a href="ferias.html">Férias</a></nav></div></header>
+<main class="wrap">
+<h1>Calculadora de Férias 2026 com 1/3 e abono pecuniário</h1>
+<p class="sub">Calcule o valor das suas férias com o terço constitucional, a opção de vender 10 dias (abono) e os descontos de INSS e IR de 2026.</p>
+<div class="card"><form id="f"><label>Salário bruto (R$)<input id="sal" inputmode="decimal" value="3000"></label>
+<label>Dias de férias<input id="dias" inputmode="decimal" value="30"></label>
+<label>Dias vendidos (abono, até 10)<input id="vend" inputmode="decimal" value="0"></label>
+<label>Nº de dependentes<input id="dep" inputmode="decimal" value="0"></label><button>Calcular</button></form></div>
+<div id="caixa-resultado" class="card oculto"><table id="resultado"></table></div>
+<div class="anuncio">Espaço para anúncio</div>
+<article class="card"><h2>Como as férias são calculadas</h2>
+<p>Você recebe o salário dos dias de descanso mais <strong>1/3 a mais</strong> (terço constitucional). INSS e Imposto de Renda incidem sobre férias + 1/3.</p>
+<h2>Vender 10 dias de férias compensa?</h2>
+<p>O abono pecuniário permite vender até 1/3 das férias (10 dias, em férias de 30). Esse valor e o seu terço <strong>não têm desconto de INSS nem de IR</strong>, por isso costuma render um bom dinheiro extra.</p>
+<p class="aviso">Para 30 dias de direito: se vender 10, preencha 20 em "Dias de férias" e 10 em "Dias vendidos".</p></article>
+<h2>Outras calculadoras</h2><div class="grade"><a href="salario-liquido.html"><strong>Salário Líquido</strong>Descubra quanto você recebe de verdade. Calcule o salário líquido 2026 com desco…</a><a href="decimo-terceiro.html"><strong>13º Salário</strong>Calcule o valor do seu 13º salário 2026, integral ou proporcional, com o valor e…</a><a href="horas-extras.html"><strong>Horas Extras</strong>Saiba quanto vale sua hora extra. Calcule horas extras de 50% e 100% (domingos e…</a><a href="juros-compostos.html"><strong>Juros Compostos</strong>Simule quanto seu dinheiro rende com juros compostos e aportes mensais. Veja o t…</a></div>
+</main>
+<footer><div class="wrap">© 2026 Calcula Fácil. Valores com base nas tabelas oficiais de 2026. Resultados são estimativas e não substituem a orientação de um contador. · <a href="privacidade.html">Privacidade</a></div></footer>
+<script src="js/calculos.js"></script><script src="js/ui.js"></script>
+<script>document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var v=Math.min(10,num('vend'));var r=Calc.ferias(num('sal'),num('dias'),v,num('dep'));
+mostrar([['Férias',r.ferias],['1/3 de férias',r.terco],['Abono pecuniário',r.abono],['1/3 do abono',r.tercoAbono],['(−) INSS',r.inss],['(−) Imposto de Renda',r.irrf],['Total líquido',r.liquido,1]]);});</script>
+</body></html>

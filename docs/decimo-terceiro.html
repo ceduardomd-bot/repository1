@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculadora de 13º Salário 2026: 1ª e 2ª parcela</title>
+<meta name="description" content="Calcule o valor do seu 13º salário 2026, integral ou proporcional, com o valor exato da primeira e da segunda parcela já com descontos.">
+<link rel="canonical" href="https://SEU-USUARIO.github.io/repository1/decimo-terceiro.html">
+<meta property="og:title" content="Calculadora de 13º Salário 2026: 1ª e 2ª parcela"><meta property="og:description" content="Calcule o valor do seu 13º salário 2026, integral ou proporcional, com o valor exato da primeira e da segunda parcela já com descontos.">
+<link rel="stylesheet" href="css/style.css">
+
+</head><body>
+<header class="topo"><div class="wrap"><a class="logo" href="index.html">Calcula<span>Fácil</span></a><nav><a href="salario-liquido.html">Salário Líquido</a><a href="decimo-terceiro.html">13º Salário</a><a href="ferias.html">Férias</a></nav></div></header>
+<main class="wrap">
+<h1>Calculadora de 13º Salário 2026: 1ª e 2ª parcela</h1>
+<p class="sub">Calcule o valor do seu 13º salário 2026, integral ou proporcional, com o valor exato da primeira e da segunda parcela já com descontos.</p>
+<div class="card"><form id="f"><label>Salário bruto (R$)<input id="sal" inputmode="decimal" value="3000"></label>
+<label>Meses trabalhados no ano<input id="meses" inputmode="decimal" value="12"></label>
+<label>Nº de dependentes<input id="dep" inputmode="decimal" value="0"></label><button>Calcular</button></form></div>
+<div id="caixa-resultado" class="card oculto"><table id="resultado"></table></div>
+<div class="anuncio">Espaço para anúncio</div>
+<article class="card"><h2>Como funciona o 13º salário</h2>
+<p>O 13º é pago em duas parcelas. A <strong>primeira</strong>, até 30 de novembro, é metade do valor bruto, sem descontos. A <strong>segunda</strong>, até 20 de dezembro, é o restante já com INSS e Imposto de Renda descontados.</p>
+<h2>13º proporcional</h2>
+<p>Quem não trabalhou o ano todo recebe 1/12 do salário por mês trabalhado. O mês com 15 dias ou mais de trabalho conta como mês inteiro.</p>
+<p class="aviso">Horas extras, adicional noturno e comissões habituais entram na média do 13º. Some essas médias ao salário para um valor mais preciso.</p></article>
+<h2>Outras calculadoras</h2><div class="grade"><a href="salario-liquido.html"><strong>Salário Líquido</strong>Descubra quanto você recebe de verdade. Calcule o salário líquido 2026 com desco…</a><a href="ferias.html"><strong>Férias</strong>Calcule o valor das suas férias com o terço constitucional, a opção de vender 10…</a><a href="horas-extras.html"><strong>Horas Extras</strong>Saiba quanto vale sua hora extra. Calcule horas extras de 50% e 100% (domingos e…</a><a href="juros-compostos.html"><strong>Juros Compostos</strong>Simule quanto seu dinheiro rende com juros compostos e aportes mensais. Veja o t…</a></div>
+</main>
+<footer><div class="wrap">© 2026 Calcula Fácil. Valores com base nas tabelas oficiais de 2026. Resultados são estimativas e não substituem a orientação de um contador. · <a href="privacidade.html">Privacidade</a></div></footer>
+<script src="js/calculos.js"></script><script src="js/ui.js"></script>
+<script>document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var r=Calc.decimoTerceiro(num('sal'),num('meses'),num('dep'));
+mostrar([['13º bruto',r.bruto],['1ª parcela (até 30/nov)',r.primeira],['(−) INSS',r.inss],['(−) Imposto de Renda',r.irrf],['2ª parcela (até 20/dez)',r.segunda],['Total líquido',r.liquido,1]]);});</script>
+</body></html>
