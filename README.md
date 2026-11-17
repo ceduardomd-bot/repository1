@@ -35,6 +35,12 @@ rescisão trabalhista, FGTS, seguro-desemprego, adicional noturno, financiamento
 
 ---
 
+## Aulas de matemática (Aprender)
+
+Além das calculadoras, o site tem uma trilha de 10 aulas curtas em `aprender.html`: porcentagem, descontos, soma e multiplicação de cabeça, frações, regra de três, equações, regra do 72 e derivada. Cada aula explica um truque e gera exercícios novos a cada tentativa, corrigidos na hora com o passo a passo. Há também um desafio de 60 segundos (`desafio.html`). É tudo grátis e sem cadastro: o progresso fica salvo só no navegador de quem usa.
+
+Para criar uma aula nova, adicione um item em `LICOES` no gerador e um gerador de exercícios com o mesmo `id` em `docs/js/licoes.js`.
+
 ## Manutenção (todo mês de janeiro)
 
 As tabelas de INSS e Imposto de Renda mudam todo ano. Elas ficam **em um único lugar**: o topo de `docs/js/calculos.js`. Basta pedir ao Claude: *"atualize as tabelas de INSS e IR para o ano novo"*.
@@ -44,6 +50,7 @@ As tabelas de INSS e Imposto de Renda mudam todo ano. Elas ficam **em um único 
 - `docs/`: o site publicado (HTML, CSS e JS puros, sem dependências).
 - `docs/js/calculos.js`: todas as regras de cálculo e as tabelas oficiais.
 - `ferramentas/gerar_paginas.py`: gera as páginas, o sitemap e o robots.txt. Para criar uma calculadora nova, basta adicionar um item em `CALCS` e rodar `python3 ferramentas/gerar_paginas.py`.
-- `tests/`: testes dos cálculos (`node --test tests/`).
+- `docs/js/licoes.js`: geradores de exercícios das aulas. `docs/js/treino.js`: tela das aulas e do desafio.
+- `tests/`: testes dos cálculos e dos exercícios (`node --test tests/*.test.js`).
 
 *Os resultados são estimativas e não substituem a orientação de um contador.*

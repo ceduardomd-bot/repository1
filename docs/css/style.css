@@ -29,3 +29,26 @@ tr.total td{font-weight:800;font-size:1.1rem;background:var(--destaque);border-b
 .grade a:hover{border-color:var(--pri)}
 .aviso{font-size:.85rem;color:var(--muted)}
 footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--borda);margin-top:30px}
+/* Aulas de matemática */
+:root{--erro:#b3261e;--erro-bg:#fbeceb}
+@media (prefers-color-scheme:dark){:root{--erro:#ff8a80;--erro-bg:#3a1d1b}button{color:#0b1f17}}
+h2{font-size:1.2rem;margin:.2em 0 .5em}
+.migalha{font-size:.85rem;color:var(--muted);margin:0}
+.trilha{list-style:none;padding:0;margin:18px 0;display:grid;gap:10px}
+.trilha a{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;background:var(--card);border:1px solid var(--borda);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--txt)}
+.trilha a:hover{border-color:var(--pri)}
+.trilha span,.trilha em{font-size:.85rem;color:var(--muted);font-style:normal}
+.trilha a.feita{background:var(--destaque)}
+.trilha a.feita em{color:var(--pri);font-weight:700}
+.chamada{display:block;background:var(--destaque);border:1px solid var(--pri);border-radius:12px;padding:18px;margin:18px 0;text-decoration:none;color:var(--txt)}
+.chamada strong{display:block;color:var(--pri);font-size:1.05rem}
+.barra{height:8px;background:var(--borda);border-radius:4px;overflow:hidden}
+.barra i{display:block;height:100%;width:0;background:var(--pri);transition:width .3s}
+.pergunta{font-size:1.35rem;font-weight:700;margin:.6em 0;min-height:1.6em}
+.placar{font-weight:700;font-variant-numeric:tabular-nums;margin:0}
+.fb{border-radius:8px;padding:12px 14px;margin-top:14px}
+.fb.ok{background:var(--destaque)}
+.fb.erro{background:var(--erro-bg)}
+.fb.erro strong{color:var(--erro)}
+.fb ol{margin:.4em 0 0;padding-left:1.3em}
+#d-comecar{width:100%;margin-top:14px}
